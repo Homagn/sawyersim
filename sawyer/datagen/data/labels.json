@@ -1,0 +1,787 @@
+{
+    "0": {
+        "x1": 0.646,
+        "x2": 0.5539999999999999,
+        "y1": 0.5255,
+        "y2": -0.12549999999999994,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.646,
+                        0.5255,
+                        0.8
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        0.0,
+                        0,
+                        0,
+                        0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        3.5,
+                        0,
+                        0,
+                        0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.5539999999999999,
+                        -0.12549999999999994,
+                        0.8
+                    ]
+                }
+            }
+        }
+    },
+    "1": {
+        "x1": 0.62,
+        "x2": 0.58,
+        "y1": 0.5465,
+        "y2": -0.14649999999999996,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.62,
+                        0.5465,
+                        0.8
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        0.0,
+                        0,
+                        0,
+                        0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        3.5,
+                        0,
+                        0,
+                        0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.58,
+                        -0.14649999999999996,
+                        0.8
+                    ]
+                }
+            }
+        }
+    },
+    "2": {
+        "x1": 0.6599999999999999,
+        "x2": 0.54,
+        "y1": 0.4345,
+        "y2": -0.034499999999999975,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.6599999999999999,
+                        0.4345,
+                        0.8
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        0.0,
+                        0,
+                        0,
+                        0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        3.5,
+                        0,
+                        0,
+                        0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.54,
+                        -0.034499999999999975,
+                        0.8
+                    ]
+                }
+            }
+        }
+    },
+    "3": {
+        "x1": 0.606,
+        "x2": 0.594,
+        "y1": 0.33999999999999997,
+        "y2": 0.060000000000000026,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.606,
+                        0.33999999999999997,
+                        0.8
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        5.0,
+                        0,
+                        0,
+                        0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        8.5,
+                        0,
+                        0,
+                        0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.594,
+                        0.060000000000000026,
+                        0.8
+                    ]
+                }
+            }
+        }
+    },
+    "4": {
+        "x1": 0.74,
+        "x2": 0.45999999999999996,
+        "y1": 0.508,
+        "y2": -0.10799999999999993,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.74,
+                        0.508,
+                        0.8
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        5.0,
+                        0,
+                        0,
+                        0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        8.5,
+                        0,
+                        0,
+                        0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.45999999999999996,
+                        -0.10799999999999993,
+                        0.8
+                    ]
+                }
+            }
+        }
+    },
+    "5": {
+        "x1": 0.616,
+        "x2": 0.584,
+        "y1": 0.48,
+        "y2": -0.07999999999999996,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.616,
+                        0.48,
+                        0.8
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        5.0,
+                        0,
+                        0,
+                        0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        8.5,
+                        0,
+                        0,
+                        0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.584,
+                        -0.07999999999999996,
+                        0.8
+                    ]
+                }
+            }
+        }
+    },
+    "6": {
+        "x1": 0.622,
+        "x2": 0.578,
+        "y1": 0.38549999999999995,
+        "y2": 0.01450000000000004,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.622,
+                        0.38549999999999995,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        5.0,
+                        -0.5,
+                        0,
+                        0.5,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        8.5,
+                        -0.5,
+                        0,
+                        0.5,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.578,
+                        0.01450000000000004,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ]
+                }
+            },
+            "drag_vector": [
+                -0.04400000000000004,
+                -0.3709999999999999
+            ]
+        }
+    },
+    "7": {
+        "x1": 0.726,
+        "x2": 0.474,
+        "y1": 0.4135,
+        "y2": -0.013499999999999956,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.726,
+                        0.4135,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        5.0,
+                        -0.5,
+                        0,
+                        0.5,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        8.5,
+                        -0.5,
+                        0,
+                        0.5,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.474,
+                        -0.013499999999999956,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ]
+                }
+            },
+            "drag_vector": [
+                -0.252,
+                -0.42699999999999994
+            ]
+        }
+    },
+    "8": {
+        "x1": 0.6679999999999999,
+        "x2": 0.532,
+        "y1": 0.536,
+        "y2": -0.13599999999999995,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.6679999999999999,
+                        0.536,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        3.75,
+                        5.0,
+                        -0.5,
+                        0,
+                        0.5,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.75,
+                        8.5,
+                        -0.5,
+                        0,
+                        0.5,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.532,
+                        -0.13599999999999995,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ]
+                }
+            },
+            "drag_vector": [
+                -0.1359999999999999,
+                -0.6719999999999999
+            ]
+        }
+    },
+    "9": {
+        "x1": 0.792,
+        "x2": 0.408,
+        "y1": 0.3645,
+        "y2": 0.03550000000000003,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.792,
+                        0.3645,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        2.0,
+                        5.0,
+                        1.0,
+                        0,
+                        0.5,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        1.0,
+                        8.0,
+                        1.0,
+                        0,
+                        0.5,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.408,
+                        0.03550000000000003,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ]
+                }
+            },
+            "drag_vector": [
+                -0.38400000000000006,
+                -0.32899999999999996
+            ]
+        }
+    },
+    "10": {
+        "x1": 0.6839999999999999,
+        "x2": 0.516,
+        "y1": 0.5255,
+        "y2": -0.12549999999999994,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.6839999999999999,
+                        0.5255,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        1.0,
+                        5.2,
+                        1.5,
+                        -1.2,
+                        0.0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.67,
+                        5.71,
+                        1.469,
+                        -0.94,
+                        0.0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.516,
+                        -0.12549999999999994,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ]
+                }
+            },
+            "drag_vector": [
+                -0.16799999999999993,
+                -0.6509999999999999
+            ]
+        }
+    },
+    "11": {
+        "x1": 0.638,
+        "x2": 0.5619999999999999,
+        "y1": 0.2665,
+        "y2": 0.1335,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.638,
+                        0.2665,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        1.0,
+                        5.2,
+                        1.5,
+                        -1.2,
+                        0.0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.67,
+                        5.71,
+                        1.469,
+                        -0.94,
+                        0.0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.5619999999999999,
+                        0.1335,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ]
+                }
+            },
+            "drag_vector": [
+                -0.07600000000000007,
+                -0.133
+            ]
+        }
+    },
+    "12": {
+        "x1": 0.7,
+        "x2": 0.5,
+        "y1": 0.2315,
+        "y2": 0.1685,
+        "action_sequence": {
+            "1": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.7,
+                        0.2315,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ],
+                    "table": [
+                        0.63,
+                        0.2,
+                        0
+                    ],
+                    "camera_platform": [
+                        1.0,
+                        5.2,
+                        1.5,
+                        -1.2,
+                        0.0,
+                        1.57
+                    ],
+                    "camera_platform_side": [
+                        0.67,
+                        5.71,
+                        1.469,
+                        -0.94,
+                        0.0,
+                        3.14
+                    ]
+                }
+            },
+            "2": {
+                "delta_joint_pos": [],
+                "gripper": "",
+                "ikpos": [],
+                "preset_pos": "neutral",
+                "move_object": {
+                    "cube": [
+                        0.5,
+                        0.1685,
+                        1.0,
+                        0,
+                        0.5,
+                        0
+                    ]
+                }
+            },
+            "drag_vector": [
+                -0.19999999999999996,
+                -0.063
+            ]
+        }
+    }
+}

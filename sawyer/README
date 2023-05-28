@@ -1,0 +1,21 @@
+(in a new terminal go to the folder which contains all the server side code)
+cd ~/Docker-recipes/scslab-robots
+sudo docker build -t scslab-robots .
+(this will build the image might take a lot of time of first time)
+
+
+(after image has been built, in the same terminal)
+./scripts/start_sawyer_sim.sh
+(this will pull up the intera interface inside the docker container)
+
+(in the same terminal now intera will show up )
+cd sawyer_server
+python server.py 
+(will pull up the gazebo simulation of sawyer)
+
+
+(in a new terminal go to the folder containing all the client side code- ML code developed here in this folder)
+(assumes working in the base conda environment which has pytorch and all the stuff)
+cd ~/sawyer/datagen
+python stack2.py
+(will start the data generation process for stacking 2 cubes)
