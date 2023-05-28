@@ -16,7 +16,7 @@ Instructions
 
 6. change the line --mount type=bind,source=/home/homag/Desktop/ml/misctools/sawyersim/sawyer/,target=/sawyer \ to this below
 
---mount type=bind,source=<absolute location of sawyersim folder>/sawyer/,target=/sawyer \
+--mount type=bind,source=[absolute location of sawyersim folder]/sawyer/,target=/sawyer \
 
 7. chmod +x start_sawyer_sim.sh
 
