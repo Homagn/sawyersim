@@ -73,6 +73,14 @@ class gazebo_client(object):
             rgb_side = self.data[b'rgb_side']
             print("Got rgb_side data shape ",rgb_side.shape)
             observations['rgb_side'] = rgb_side
+        if 'head_rgb' in request['observation']:
+            rgb = self.data[b'head_rgb']
+            print("Got rgb data shape ",rgb.shape)
+            observations['head_rgb'] = rgb
+        if 'hand_rgb' in request['observation']:
+            rgb_side = self.data[b'hand_rgb']
+            print("Got rgb_side data shape ",rgb_side.shape)
+            observations['hand_rgb'] = rgb_side
         if 'joint_angles' in request['observation']:
             jangles = self.data[b'jangles']
             print("Got joint angles ",jangles)
@@ -230,14 +238,16 @@ def grab_n_drag(gc, sp, syaw, sr, sx, sy, sz, tp, tyaw, tr, tx, ty, tz):
     #4. Finally close the gripper and grab the object
     request['action']['gripper']='close'
     request['action']['ikpos']=[]
-    request['observation'] = ['rgb', 'rgb_side', 'end_pos','joint_angles']
+    #request['observation'] = ['rgb', 'rgb_side', 'end_pos','joint_angles']
+    request['observation'] = ['head_rgb', 'hand_rgb', 'end_pos','joint_angles']
     o4 = gc.step(request) #passed values are global positions wrt start
 
     #5. (different from example pick func) drag the object by specifying an IK target of end effector
     request['action']['ikpos']=[tx,ty,tz, sp, syaw, sr]
     o5 = gc.step(request)
     request['action']['ikpos']=[tx,ty,tz, tp, tyaw, tr] #chenge the final end effector angles in mid air
-    request['observation'] = ['rgb', 'rgb_side', 'end_pos','joint_angles', 'grasp_success']
+    #request['observation'] = ['rgb', 'rgb_side', 'end_pos','joint_angles', 'grasp_success']
+    request['observation'] = ['head_rgb', 'hand_rgb', 'end_pos','joint_angles', 'grasp_success']
     o5 = gc.step(request)
 
     #6. Finally get back the arm to neutral position to be ready for next random block 
@@ -270,35 +280,17 @@ if __name__ == '__main__':
     t.sleep(5)
 
 
-    cv2.imwrite('1_front1.png', observations[3]['rgb']) 
-    cv2.imwrite('1_front2.png', observations[4]['rgb']) 
+    cv2.imwrite('1_front1.png', observations[3]['head_rgb']) 
+    cv2.imwrite('1_front2.png', observations[4]['head_rgb']) 
 
-    cv2.imwrite('2_side1.png', observations[3]['rgb_side']) 
-    cv2.imwrite('2_side2.png', observations[4]['rgb_side']) 
+    #use these if taking input from extra cameras
+    #cv2.imwrite('2_side1.png', observations[3]['rgb_side']) 
+    #cv2.imwrite('2_side2.png', observations[4]['rgb_side']) 
 
-    import json
+    cv2.imwrite('2_side1.png', observations[3]['hand_rgb']) 
+    cv2.imwrite('2_side2.png', observations[4]['hand_rgb']) 
 
-    labels = {}
-    labels[repr(1)] = {}
-
-    labels[repr(1)]['sp'] = -3.138
-    labels[repr(1)]['syaw'] = 0.005
-    labels[repr(1)]['sr'] = -3.138
-
-    labels[repr(1)]['sx'] = 0.5
-    labels[repr(1)]['sy'] = 0.25
-    labels[repr(1)]['sz'] = -0.14
-
-    labels[repr(1)]['tp'] = -3.138
-    labels[repr(1)]['tyaw'] = -0.2
-    labels[repr(1)]['tr'] = -3.138
-
-    labels[repr(1)]['tx'] = 0.6
-    labels[repr(1)]['ty'] = 0.35
-    labels[repr(1)]['tz'] = -0.08
-
-    with open('data/labels.json', 'w') as fp:
-        json.dump(labels, fp, indent = 4)
+    
 
 
 

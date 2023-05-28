@@ -11,7 +11,7 @@ import math
 from collections import deque
 from datetime import datetime as dt
 import time as t
-#import ros_numpy #sudo apt-get install ros-kinetic-ros-numpy
+import ros_numpy #sudo apt-get install ros-kinetic-ros-numpy
 
 #NOTE: It returns a 5 dimensional entity: At each 480x640 pixel locations it stores the laser distance x,y, and z from camera
 class pointcloud:
@@ -24,7 +24,7 @@ class pointcloud:
     self.viz_save = viz_save
     #self.images.append(np.array([1,2,3,4,5]))
     #rospy.init_node('cam_observer')
-    rospy.Subscriber("/camera/depth/points", PointCloud2, self.callback1)
+    rospy.Subscriber("/camera/depth/points", PointCloud2, self.callback2)
   def see(self):
     while np.shape(self.images[-1])[0]!=3:
         try: 

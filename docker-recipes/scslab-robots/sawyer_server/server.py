@@ -9,6 +9,7 @@ os.environ['SAWYER_SERVER'] = '/root/ros_ws/sawyer_server'
 sys.path.append(os.path.join(os.environ['SAWYER_SERVER']))
 
 import camera
+import sawyer_camera
 import pointcloud
 import move_sim_objects
 import arm_motion
@@ -66,9 +67,13 @@ def reset_sim(am):
     print("Done moving arm to neutral position")
     am.angles = am.limb.joint_angles()
 
-def record_obs(c,p, am, m, observation_request):
+def record_obs(sc, c,p, am, m, observation_request):
     obs_cam = c[0].see()
     obs_cam_side = c[1].see()
+
+    obs_cam_head = sc.see("head")
+    obs_cam_hand = sc.see("hand")
+
     obs_depth = p.see()
     jangles = am.joint_angles()
     obs = {}
@@ -76,6 +81,10 @@ def record_obs(c,p, am, m, observation_request):
         obs['rgb'] = obs_cam
     if u'rgb_side' in observation_request:
         obs['rgb_side'] = obs_cam_side
+    if u'head_rgb' in observation_request:
+        obs['head_rgb'] = obs_cam_head
+    if u'hand_rgb' in observation_request:
+        obs['hand_rgb'] = obs_cam_hand
     if u'depth' in observation_request:
         obs['depth'] = obs_depth
     if u'joint_angles' in observation_request:
@@ -206,8 +215,10 @@ if __name__ == '__main__':
 
 
     print 'Starting environment observation nodes '
-    #c = [camera.Camera("raw", topic_desc = 'head_camera'), camera.Camera("raw", topic_desc = "right_hand_camera")]
+    #extra floating cameras
     c = [camera.Camera("raw"), camera.Camera("raw", topic_desc = "color_side")]
+    #cameras on sawyer
+    sc = sawyer_camera.camera()
     p = pointcloud.pointcloud(viz_save = True)
     t.sleep(1)
     print 'subscribed to sensors, waiting for client to connect'
@@ -241,7 +252,7 @@ if __name__ == '__main__':
                 print('Server received request to provide observations',data[u'observation'])
 
                 gazebo_work(am, move_sim_objects, data[u'action'])
-                obs_data = record_obs(c,p,am, move_sim_objects, data[u'observation'])
+                obs_data = record_obs(sc, c,p,am, move_sim_objects, data[u'observation'])
 
                 #mirror motion to another duplicate object for clean observation without the clutter created by the arm
                 mirror_motion(move_sim_objects, mirror_shift, copied = 'cube', mirrored = 'cube_m1')
